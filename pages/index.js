@@ -1,25 +1,17 @@
 import React from 'react';
-import { Fragment, useState } from 'react';
-import { Dialog, Popover, Tab, Transition } from '@headlessui/react';
-import {
-	Bars3Icon,
-	MagnifyingGlassIcon,
-	QuestionMarkCircleIcon,
-	ShoppingBagIcon,
-	XMarkIcon,
-} from '@heroicons/react/24/outline';
-import { ChevronDownIcon } from '@heroicons/react/20/solid';
 import Navbar from '../components/Navbar';
-
+import Hero from '../images/Hero.jpeg';
+import MobileMenu from '../components/MobileMenu';
 function index() {
 	return (
-		<div>
+		<div className="bg-white">
 			{/* Hero section */}
-			<div className="relative bg-gray-900">
+			<MobileMenu />
+			<div className="relative bg-white-900">
 				{/* Decorative image and overlay */}
 				<div aria-hidden="true" className="absolute inset-0 overflow-hidden">
 					<img
-						src=""
+						src={Hero.src}
 						alt=""
 						className="h-full w-full object-cover object-center"
 					/>

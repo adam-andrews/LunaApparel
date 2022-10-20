@@ -11,7 +11,6 @@ import {
 	ShoppingBagIcon,
 	XMarkIcon,
 } from '@heroicons/react/24/outline';
-import { ChevronDownIcon } from '@heroicons/react/20/solid';
 
 function classNames(...classes) {
 	return classes.filter(Boolean).join(' ');
