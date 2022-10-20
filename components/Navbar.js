@@ -136,15 +136,6 @@ function Navbar() {
 										<span className="sr-only">Open menu</span>
 										<Bars3Icon className="h-6 w-6" aria-hidden="true" />
 									</button>
-
-									{/* Search */}
-									<a href="#" className="ml-2 p-2 text-white">
-										<span className="sr-only">Search</span>
-										<MagnifyingGlassIcon
-											className="h-6 w-6"
-											aria-hidden="true"
-										/>
-									</a>
 								</div>
 
 								{/* Logo (lg-) */}
@@ -158,29 +149,7 @@ function Navbar() {
 								</a>
 
 								<div className="flex flex-1 items-center justify-end">
-									<a
-										href="#"
-										className="hidden text-sm font-medium text-white lg:block"
-									>
-										Search
-									</a>
-
 									<div className="flex items-center lg:ml-8">
-										{/* Help */}
-										<a href="#" className="p-2 text-white lg:hidden">
-											<span className="sr-only">Help</span>
-											<QuestionMarkCircleIcon
-												className="h-6 w-6"
-												aria-hidden="true"
-											/>
-										</a>
-										<a
-											href="#"
-											className="hidden text-sm font-medium text-white lg:block"
-										>
-											Help
-										</a>
-
 										{/* Cart */}
 										<div className="ml-4 flow-root lg:ml-8">
 											<a href="#" className="group -m-2 flex items-center p-2">
