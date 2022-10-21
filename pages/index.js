@@ -5,6 +5,8 @@ import MobileMenu from '../components/MobileMenu';
 import { useSelector, useDispatch } from 'react-redux';
 function index() {
 	const { isMobileMenuOpen } = useSelector((state) => state.mobilemenu);
+	const { shoppingbag } = useSelector((state) => state.shoppingbag);
+
 	const dispatch = useDispatch();
 	return (
 		<div className="bg-white">

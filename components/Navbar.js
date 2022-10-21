@@ -1,19 +1,10 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { openMobileMenu } from '../redux/mobilemenu';
-
 import { navigation } from '../data/navigation';
-import { collection } from '../data/collections';
-import { categories } from '../data/categories';
-import { Fragment, useState } from 'react';
-import { Dialog, Popover, Tab, Transition } from '@headlessui/react';
-import {
-	Bars3Icon,
-	MagnifyingGlassIcon,
-	QuestionMarkCircleIcon,
-	ShoppingBagIcon,
-	XMarkIcon,
-} from '@heroicons/react/24/outline';
+import { Fragment } from 'react';
+import { Popover, Transition } from '@headlessui/react';
+import { Bars3Icon, ShoppingBagIcon } from '@heroicons/react/24/outline';
 
 function classNames(...classes) {
 	return classes.filter(Boolean).join(' ');

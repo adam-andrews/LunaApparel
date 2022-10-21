@@ -1,6 +1,6 @@
 import React from 'react';
-import { Fragment, useState } from 'react';
-import { Dialog, Popover, Tab, Transition } from '@headlessui/react';
+import { Fragment } from 'react';
+import { Dialog, Tab, Transition } from '@headlessui/react';
 import { XMarkIcon } from '@heroicons/react/24/outline';
 import { ChevronDownIcon } from '@heroicons/react/20/solid';
 import { collection } from '../data/collections';
