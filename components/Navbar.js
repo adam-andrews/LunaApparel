@@ -1,4 +1,7 @@
 import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { openMobileMenu } from '../redux/mobilemenu';
+
 import { navigation } from '../data/navigation';
 import { collection } from '../data/collections';
 import { categories } from '../data/categories';
@@ -16,8 +19,8 @@ function classNames(...classes) {
 	return classes.filter(Boolean).join(' ');
 }
 function Navbar() {
-	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
+	const { isMobileMenuOpen } = useSelector((state) => state.mobilemenu);
+	const dispatch = useDispatch();
 	return (
 		<header className="relative z-10">
 			<nav aria-label="Top">
@@ -131,7 +134,7 @@ function Navbar() {
 									<button
 										type="button"
 										className="-ml-2 p-2 text-white"
-										onClick={() => setMobileMenuOpen(true)}
+										onClick={() => dispatch(openMobileMenu())}
 									>
 										<span className="sr-only">Open menu</span>
 										<Bars3Icon className="h-6 w-6" aria-hidden="true" />

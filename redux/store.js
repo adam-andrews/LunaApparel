@@ -1,5 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit';
+import mobilemenuReducer from './mobilemenu';
 
 export default configureStore({
-	reducer: {},
+	reducer: {
+		mobilemenu: mobilemenuReducer,
+	},
 });

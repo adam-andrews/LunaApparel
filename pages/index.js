@@ -2,7 +2,10 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import Hero from '../images/Hero.jpeg';
 import MobileMenu from '../components/MobileMenu';
+import { useSelector, useDispatch } from 'react-redux';
 function index() {
+	const { isMobileMenuOpen } = useSelector((state) => state.mobilemenu);
+	const dispatch = useDispatch();
 	return (
 		<div className="bg-white">
 			{/* Hero section */}

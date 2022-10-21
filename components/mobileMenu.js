@@ -6,18 +6,23 @@ import { ChevronDownIcon } from '@heroicons/react/20/solid';
 import { collection } from '../data/collections';
 import { categories } from '../data/categories';
 import { navigation } from '../data/navigation';
+import { useSelector, useDispatch } from 'react-redux';
+import { closeMobileMenu } from '../redux/mobilemenu';
 
 function classNames(...classes) {
 	return classes.filter(Boolean).join(' ');
 }
 function MobileMenu() {
-	const [mobileMenuOpen, setMobileMenuOpen] = useState(true);
+	const { isMobileMenuOpen } = useSelector((state) => state.mobilemenu);
+	const dispatch = useDispatch();
 	return (
-		<Transition.Root show={mobileMenuOpen} as={Fragment}>
+		<Transition.Root show={isMobileMenuOpen} as={Fragment}>
 			<Dialog
 				as="div"
 				className="relative z-40 lg:hidden"
-				onClose={setMobileMenuOpen}
+				onClose={() => {
+					dispatch(closeMobileMenu());
+				}}
 			>
 				<Transition.Child
 					as={Fragment}
@@ -46,7 +51,7 @@ function MobileMenu() {
 								<button
 									type="button"
 									className="-m-2 inline-flex items-center justify-center rounded-md p-2 text-gray-400"
-									onClick={() => setMobileMenuOpen(false)}
+									onClick={() => dispatch(closeMobileMenu())}
 								>
 									<span className="sr-only">Close menu</span>
 									<XMarkIcon className="h-6 w-6" aria-hidden="true" />

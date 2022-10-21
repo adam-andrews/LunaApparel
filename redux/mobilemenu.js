@@ -1,22 +1,25 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-const initialState = { value: 0 };
-
-const counterSlice = createSlice({
-	name: 'counter',
-	initialState,
+export const mobilemenuSlice = createSlice({
+	name: 'mobilemenu',
+	initialState: {
+		isMobileMenuOpen: false,
+	},
 	reducers: {
-		increment(state) {
-			state.value++;
+		openMobileMenu: (state) => {
+			state.isMobileMenuOpen = true;
 		},
-		decrement(state) {
-			state.value--;
+		closeMobileMenu: (state) => {
+			state.isMobileMenuOpen = false;
 		},
-		incrementByAmount(state, action) {
-			state.value += action.payload;
+		switchMobileMenu: (state) => {
+			state.isMobileMenuOpen = !state.isMobileMenuOpen;
 		},
 	},
 });
 
-export const { increment, decrement, incrementByAmount } = counterSlice.actions;
-export default counterSlice.reducer;
+// Action creators are generated for each case reducer function
+export const { openMobileMenu, closeMobileMenu, switchMobileMenu } =
+	mobilemenuSlice.actions;
+
+export default mobilemenuSlice.reducer;
