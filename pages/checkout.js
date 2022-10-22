@@ -1,12 +1,12 @@
 import { Fragment, useState } from 'react';
-import { products1 } from '../data/product';
+import { products1 } from '@data/products';
 import {
 	CheckIcon,
 	ClockIcon,
 	QuestionMarkCircleIcon,
 	XMarkIcon as XMarkIconMini,
 } from '@heroicons/react/20/solid';
-import Navbar from '../components/Navbar';
+import Navbar from '@components/Navbar';
 
 function classNames(...classes) {
 	return classes.filter(Boolean).join(' ');

@@ -1,0 +1,12 @@
+{
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"@data/*": ["./data/*"],
+			"@components/*": ["./components/*"],
+			"@pages/*": ["./pages/*"],
+			"@images/*": ["./images/*"],
+			"@redux/*": ["./redux/*"]
+		}
+	}
+}

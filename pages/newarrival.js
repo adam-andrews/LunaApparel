@@ -1,6 +1,6 @@
 import React from 'react';
-import Product from '../components/Product';
-import { products1, products2 } from '../data/product';
+import Product from '@components/Product';
+import { products1, products2 } from '@data/products';
 function classNames(...classes) {
 	return classes.filter(Boolean).join(' ');
 }

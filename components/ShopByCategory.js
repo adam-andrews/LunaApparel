@@ -1,5 +1,5 @@
 import React from 'react';
-import { collections } from '../data/collections';
+import { collections } from '@data/collections';
 
 function ShopByCategory() {
 	return (

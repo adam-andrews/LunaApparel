@@ -1,12 +1,12 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { openMobileMenu } from '../redux/mobilemenu';
-import { navigation } from '../data/navigation';
+import { openMobileMenu } from '@redux/mobilemenu';
+import { navigation } from '@data/navigation';
 import { Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
 import { Bars3Icon, ShoppingBagIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
-import Logo from '../images/Logo.svg';
+import Logo from '@images/Logo.svg';
 
 function classNames(...classes) {
 	return classes.filter(Boolean).join(' ');

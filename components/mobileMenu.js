@@ -2,9 +2,9 @@ import React from 'react';
 import { Fragment } from 'react';
 import { Dialog, Tab, Transition } from '@headlessui/react';
 import { XMarkIcon } from '@heroicons/react/24/outline';
-import { navigation } from '../data/navigation';
+import { navigation } from '@data/navigation';
 import { useSelector, useDispatch } from 'react-redux';
-import { closeMobileMenu } from '../redux/mobilemenu';
+import { closeMobileMenu } from '@redux/mobilemenu';
 
 function classNames(...classes) {
 	return classes.filter(Boolean).join(' ');
