@@ -5,12 +5,16 @@ import { navigation } from '../data/navigation';
 import { Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
 import { Bars3Icon, ShoppingBagIcon } from '@heroicons/react/24/outline';
+import Link from 'next/link';
+import Logo from '../images/Logo.svg';
 
 function classNames(...classes) {
 	return classes.filter(Boolean).join(' ');
 }
 function Navbar() {
 	const { isMobileMenuOpen } = useSelector((state) => state.mobilemenu);
+	const { shoppingbag } = useSelector((state) => state.shoppingbag);
+
 	const dispatch = useDispatch();
 	return (
 		<header className="relative z-10">
@@ -22,10 +26,12 @@ function Navbar() {
 							<div className="flex h-16 items-center justify-between">
 								{/* Logo (lg+) */}
 								<div className="hidden lg:flex lg:flex-1 lg:items-center">
-									<a href="#">
-										<span className="sr-only">Your Company</span>
-										<img className="h-8 w-auto" src="" alt="" />
-									</a>
+									<Link href="/">
+										<a>
+											<span className="sr-only">Luma clothing</span>
+											<img className="h-8 w-auto" src={Logo.src} alt="" />
+										</a>
+									</Link>
 								</div>
 
 								<div className="hidden h-full lg:flex">
@@ -37,7 +43,7 @@ function Navbar() {
 													{({ open }) => (
 														<>
 															<div className="relative flex">
-																<Popover.Button className="relative z-10 flex items-center justify-center text-sm font-medium text-white transition-colors duration-200 ease-out">
+																<Popover.Button className="relative z-10 flex items-center justify-center text-sm font-medium text-white transition-colors duration-200 ease-out focus:outline-none">
 																	{category.name}
 																	<span
 																		className={classNames(
@@ -133,29 +139,31 @@ function Navbar() {
 								</div>
 
 								{/* Logo (lg-) */}
-								<a href="#" className="lg:hidden">
-									<span className="sr-only">Your Company</span>
-									<img
-										src="https://tailwindui.com/img/logos/mark.svg?color=white"
-										alt=""
-										className="h-8 w-auto"
-									/>
-								</a>
+								<Link href="/">
+									<a href="#" className="lg:hidden">
+										<span className="sr-only">Luma clothing</span>
+										<img src={Logo.src} alt="" className="h-8 w-auto" />
+									</a>
+								</Link>
 
 								<div className="flex flex-1 items-center justify-end">
 									<div className="flex items-center lg:ml-8">
 										{/* Cart */}
 										<div className="ml-4 flow-root lg:ml-8">
-											<a href="#" className="group -m-2 flex items-center p-2">
-												<ShoppingBagIcon
-													className="h-6 w-6 flex-shrink-0 text-white"
-													aria-hidden="true"
-												/>
-												<span className="ml-2 text-sm font-medium text-white">
-													0
-												</span>
-												<span className="sr-only">items in cart, view bag</span>
-											</a>
+											<Link href="/checkout">
+												<a className="group -m-2 flex items-center p-2 ">
+													<ShoppingBagIcon
+														className="h-6 w-6 flex-shrink-0 text-white"
+														aria-hidden="true"
+													/>
+													<span className="ml-2 text-sm font-medium text-white">
+														{shoppingbag.length}
+													</span>
+													<span className="sr-only">
+														items in cart, view bag
+													</span>
+												</a>
+											</Link>
 										</div>
 									</div>
 								</div>

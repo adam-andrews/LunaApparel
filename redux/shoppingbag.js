@@ -3,7 +3,7 @@ import { createSlice } from '@reduxjs/toolkit';
 export const shoppingbagSlice = createSlice({
 	name: 'shoppingbag',
 	initialState: {
-		shoppingbag: 0,
+		shoppingbag: ['Hello'],
 	},
 	reducers: {},
 });

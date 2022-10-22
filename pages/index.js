@@ -2,12 +2,8 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import Hero from '../images/Hero.jpeg';
 import MobileMenu from '../components/MobileMenu';
-import { useSelector, useDispatch } from 'react-redux';
+import ShopByCategory from '../components/ShopByCategory';
 function index() {
-	const { isMobileMenuOpen } = useSelector((state) => state.mobilemenu);
-	const { shoppingbag } = useSelector((state) => state.shoppingbag);
-
-	const dispatch = useDispatch();
 	return (
 		<div className="bg-white">
 			{/* Hero section */}
@@ -45,6 +41,7 @@ function index() {
 					</a>
 				</div>
 			</div>
+			<ShopByCategory />
 		</div>
 	);
 }
