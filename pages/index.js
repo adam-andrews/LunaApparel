@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar';
 import Hero from '../images/Hero.jpeg';
 import MobileMenu from '../components/MobileMenu';
 import ShopByCategory from '../components/ShopByCategory';
+import Footer from '../components/Footer';
 function Home() {
 	return (
 		<div className="bg-white">
@@ -42,6 +43,7 @@ function Home() {
 				</div>
 			</div>
 			<ShopByCategory />
+			<Footer />
 		</div>
 	);
 }

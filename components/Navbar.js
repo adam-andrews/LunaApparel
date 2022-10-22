@@ -12,7 +12,6 @@ function classNames(...classes) {
 	return classes.filter(Boolean).join(' ');
 }
 function Navbar() {
-	const { isMobileMenuOpen } = useSelector((state) => state.mobilemenu);
 	const { shoppingbag } = useSelector((state) => state.shoppingbag);
 
 	const dispatch = useDispatch();
@@ -28,7 +27,7 @@ function Navbar() {
 								<div className="hidden lg:flex lg:flex-1 lg:items-center">
 									<Link href="/">
 										<a>
-											<span className="sr-only">Luma clothing</span>
+											<span className="sr-only">Luma apparel</span>
 											<img className="h-8 w-auto" src={Logo.src} alt="" />
 										</a>
 									</Link>
@@ -114,13 +113,11 @@ function Navbar() {
 											))}
 
 											{navigation.pages.map((page) => (
-												<a
-													key={page.name}
-													href={page.href}
-													className="flex items-center text-sm font-medium text-white"
-												>
-													{page.name}
-												</a>
+												<Link key={page.name} href={page.href}>
+													<a className="flex items-center text-sm font-medium text-white">
+														{page.name}
+													</a>
+												</Link>
 											))}
 										</div>
 									</Popover.Group>
