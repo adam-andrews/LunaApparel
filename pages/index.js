@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar';
 import Hero from '../images/Hero.jpeg';
 import MobileMenu from '../components/MobileMenu';
 import ShopByCategory from '../components/ShopByCategory';
-function index() {
+function Home() {
 	return (
 		<div className="bg-white">
 			{/* Hero section */}
@@ -46,4 +46,4 @@ function index() {
 	);
 }
 
-export default index;
+export default Home;
