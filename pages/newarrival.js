@@ -1,6 +1,7 @@
 import React from 'react';
 import Product from '@components/Product';
 import { MaleProducts, FemaleProducts } from '@data/products';
+import LogoCenter from '../components/LogoCenter';
 function classNames(...classes) {
 	return classes.filter(Boolean).join(' ');
 }
@@ -8,6 +9,7 @@ function classNames(...classes) {
 export default function Newarrivals() {
 	return (
 		<div className="bg-gray-50">
+			<LogoCenter />
 			<main>
 				<div className="mx-auto max-w-3xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
 					<div className="py-24 text-center">

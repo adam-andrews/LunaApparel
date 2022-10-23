@@ -1,7 +1,7 @@
 import React from 'react';
 import { useRouter } from 'next/router';
 import { MaleProducts } from '@data/products';
-import Navbar from '@components/Navbar';
+import LogoCenter from '@components/LogoCenter';
 import Product from '@components/Product';
 
 function checkCategory(product, category) {
@@ -13,6 +13,8 @@ function Category() {
 	const { category } = router.query;
 	return (
 		<div>
+			<LogoCenter />
+
 			<main>
 				<div className="mx-auto max-w-3xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
 					<div className="py-24 text-center">
@@ -37,7 +39,6 @@ function Category() {
 							).map((product) => (
 								<Product key={product.id} product={product} />
 							))}
-							))
 						</div>
 					</section>
 				</div>

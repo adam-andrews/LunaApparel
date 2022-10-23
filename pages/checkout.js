@@ -6,7 +6,7 @@ import {
 	QuestionMarkCircleIcon,
 	XMarkIcon as XMarkIconMini,
 } from '@heroicons/react/20/solid';
-import Navbar from '@components/Navbar';
+import LogoCenter from '@components/LogoCenter';
 
 function classNames(...classes) {
 	return classes.filter(Boolean).join(' ');
@@ -15,9 +15,7 @@ function classNames(...classes) {
 export default function Checkout() {
 	return (
 		<div className="bg-white">
-			<div className="bg-gray-500">
-				<Navbar />
-			</div>
+			<LogoCenter />
 			<main className="mx-auto max-w-2xl px-4 pt-16 pb-24 sm:px-6 lg:max-w-7xl lg:px-8">
 				<h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
 					Shopping Cart
