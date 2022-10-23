@@ -84,16 +84,15 @@ function Navbar() {
 																								className="object-cover object-center"
 																							/>
 																						</div>
-																						<a
-																							href={item.href}
-																							className="mt-4 block font-medium text-gray-900"
-																						>
-																							<span
-																								className="absolute inset-0 z-10"
-																								aria-hidden="true"
-																							/>
-																							{item.name}
-																						</a>
+																						<Link href={item.href}>
+																							<a className="mt-4 block font-medium text-gray-900">
+																								<span
+																									className="absolute inset-0 z-10"
+																									aria-hidden="true"
+																								/>
+																								{item.name}
+																							</a>
+																						</Link>
 																						<p
 																							aria-hidden="true"
 																							className="mt-1"
