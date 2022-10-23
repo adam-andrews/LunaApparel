@@ -5,6 +5,7 @@ import Navbar from '@components/Navbar';
 import Product from '@components/Product';
 
 function checkCategory(product, category) {
+	console.log(category, product.category);
 	return product.category === category;
 }
 
@@ -37,7 +38,6 @@ function Category() {
 							).map((product) => (
 								<Product key={product.id} product={product} />
 							))}
-							))
 						</div>
 					</section>
 				</div>

@@ -1,5 +1,5 @@
 import { Fragment, useState } from 'react';
-import { products1 } from '@data/products';
+import { MaleProducts } from '@data/products';
 import {
 	CheckIcon,
 	ClockIcon,
@@ -33,7 +33,7 @@ export default function Checkout() {
 							role="list"
 							className="divide-y divide-gray-200 border-t border-b border-gray-200"
 						>
-							{products1.map((product, productIdx) => (
+							{MaleProducts.map((product, productIdx) => (
 								<li key={product.id} className="flex py-6 sm:py-10">
 									<div className="flex-shrink-0">
 										<img
