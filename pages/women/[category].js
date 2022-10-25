@@ -3,9 +3,9 @@ import { useRouter } from 'next/router';
 import { MaleProducts } from '@data/products';
 import LogoCenter from '@components/LogoCenter';
 import Product from '@components/Product';
+import { FemaleProducts } from '@data/products';
 
 function checkCategory(product, category) {
-	console.log(category, product.category);
 	return product.category === category;
 }
 
@@ -15,8 +15,9 @@ function Category() {
 	return (
 		<div>
 			<LogoCenter />
+
 			<main>
-				<div className="mx-auto max-w-3xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+				<div className="mx-auto max-w-3xl px-4 sm:px-6 lg:max-w-7xl lg:px-8 mb-8">
 					<div className="py-16 text-center">
 						<h1 className="text-4xl font-bold tracking-tight text-gray-900">
 							{category}

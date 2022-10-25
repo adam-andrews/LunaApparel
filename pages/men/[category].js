@@ -16,8 +16,8 @@ function Category() {
 			<LogoCenter />
 
 			<main>
-				<div className="mx-auto max-w-3xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-					<div className="py-24 text-center">
+				<div className="mx-auto max-w-3xl px-4 sm:px-6 lg:max-w-7xl lg:px-8 mb-8">
+					<div className="py-16 text-center">
 						<h1 className="text-4xl font-bold tracking-tight text-gray-900">
 							{category}
 						</h1>
