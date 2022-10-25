@@ -30,9 +30,11 @@ export const shoppingbagSlice = createSlice({
 			}
 		},
 		removeItem: (state, action) => {
-			const removeItem = state.shoppingbag.filter(
-				(item) => item.id !== action.payload
-			);
+			console.log(action.payload);
+
+			const removeItem = state.shoppingbag.filter((item) => {
+				item.id !== action.payload;
+			});
 			state.shoppingbag = removeItem;
 		},
 	},

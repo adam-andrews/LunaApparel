@@ -7,7 +7,7 @@ import { Popover, Transition } from '@headlessui/react';
 import { Bars3Icon, ShoppingBagIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import Logo from '@images/Logo.svg';
-
+import Image from 'next/image';
 function classNames(...classes) {
 	return classes.filter(Boolean).join(' ');
 }
@@ -28,7 +28,7 @@ function Navbar() {
 									<Link href="/">
 										<a>
 											<span className="sr-only">Luma apparel</span>
-											<img className="h-8 w-auto" src={Logo.src} alt="" />
+											<Image height={32} width={32} src={Logo.src} alt="" />
 										</a>
 									</Link>
 								</div>

@@ -4,7 +4,16 @@ import {
 	ClockIcon,
 	XMarkIcon as XMarkIconMini,
 } from '@heroicons/react/20/solid';
+import { useDispatch } from 'react-redux';
+import { removeItem } from '@redux/shoppingbag';
 export default function CheckoutProduct({ product, productIdx }) {
+	const dispatch = useDispatch();
+	console.log(product);
+	console.log(productIdx);
+	function removeFromBag(e) {
+		e.preventDefault();
+		dispatch(removeItem(product));
+	}
 	return (
 		<li key={product.id} className="flex py-6 sm:py-10">
 			<div className="flex-shrink-0">
@@ -49,21 +58,16 @@ export default function CheckoutProduct({ product, productIdx }) {
 							id={`quantity-${productIdx}`}
 							name={`quantity-${productIdx}`}
 							className="max-w-full rounded-md border border-gray-300 py-1.5 text-left text-base font-medium leading-5 text-gray-700 shadow-sm focus:border-gray-500 focus:outline-none focus:ring-1 focus:ring-gray-500 sm:text-sm"
+							disabled
 						>
-							<option value={1}>1</option>
-							<option value={2}>2</option>
-							<option value={3}>3</option>
-							<option value={4}>4</option>
-							<option value={5}>5</option>
-							<option value={6}>6</option>
-							<option value={7}>7</option>
-							<option value={8}>8</option>
+							<option value={product.quantity}>{product.quantity}</option>
 						</select>
 
 						<div className="absolute top-0 right-0">
 							<button
 								type="button"
 								className="-m-2 inline-flex p-2 opacity-50 text-gray-400 hover:text-gray-500"
+								onClick={removeFromBag}
 							>
 								<span className="sr-only">Remove</span>
 								<XMarkIconMini className="h-5 w-5" aria-hidden="true" />
@@ -73,21 +77,11 @@ export default function CheckoutProduct({ product, productIdx }) {
 				</div>
 
 				<p className="mt-4 flex space-x-2 text-sm text-gray-700">
-					{product.inStock ? (
-						<CheckIcon
-							className="h-5 w-5 flex-shrink-0 text-green-500"
-							aria-hidden="true"
-						/>
-					) : (
-						<ClockIcon
-							className="h-5 w-5 flex-shrink-0 text-gray-300"
-							aria-hidden="true"
-						/>
-					)}
-
-					<span>
-						{product.inStock ? 'In stock' : `Ships in ${product.leadTime}`}
-					</span>
+					<CheckIcon
+						className="h-5 w-5 flex-shrink-0 text-green-500"
+						aria-hidden="true"
+					/>
+					<span>{product.inStock ? 'In stock' : `Ships in 1-2 weeks`}</span>
 				</p>
 			</div>
 		</li>

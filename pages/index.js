@@ -4,6 +4,7 @@ import Hero from '@images/Hero.jpeg';
 import MobileMenu from '@components/MobileMenu';
 import ShopByCategory from '@components/ShopByCategory';
 import Footer from '@components/Footer';
+import Image from 'next/image';
 function Home() {
 	return (
 		<div className="bg-white">
@@ -12,11 +13,7 @@ function Home() {
 			<div className="relative bg-white-900">
 				{/* Decorative image and overlay */}
 				<div aria-hidden="true" className="absolute inset-0 overflow-hidden">
-					<img
-						src={Hero.src}
-						alt=""
-						className="h-full w-full object-cover object-center"
-					/>
+					<Image src={Hero.src} alt="" layout="fill" priority />
 				</div>
 				<div
 					aria-hidden="true"
