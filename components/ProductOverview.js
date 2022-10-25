@@ -2,17 +2,20 @@ import React from 'react';
 import { CheckIcon } from '@heroicons/react/20/solid';
 import { RadioGroup } from '@headlessui/react';
 import { ShieldCheckIcon } from '@heroicons/react/24/outline';
-
+import { useDispatch } from 'react-redux';
+import { addToBag as addToBagRedux } from '@redux/shoppingbag';
 function classNames(...classes) {
 	return classes.filter(Boolean).join(' ');
 }
 
-const sizes = [
-	{ name: '18L', description: 'Perfect for a reasonable amount of snacks.' },
-	{ name: '20L', description: 'Enough room for a serious amount of snacks.' },
-];
-
+// Compnent Slug used on product
 function ProductOverview({ product }) {
+	function addToBag(e) {
+		e.preventDefault();
+		dispatch(addToBagRedux(product));
+	}
+
+	const dispatch = useDispatch();
 	return (
 		<div className="mx-auto max-w-2xl py-8 px-4 sm:py-12 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
 			{/* Product details */}
@@ -74,7 +77,8 @@ function ProductOverview({ product }) {
 						<div className="mt-10">
 							<button
 								type="submit"
-								className="flex w-full items-center justify-center rounded-md border border-transparent bg-gray-600 py-3 px-8 text-base font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-50"
+								className="flex w-full items-center justify-center rounded-md border border-transparent bg-gray-600 py-3 px-8 text-base font-medium text-white hover:bg-gray-700 focus:outline-none"
+								onClick={addToBag}
 							>
 								Add to bag
 							</button>

@@ -7,6 +7,7 @@ export const shoppingbagSlice = createSlice({
 	},
 	reducers: {
 		addToBag: (state, action) => {
+			console.log(state, action.payload);
 			const itemInBag = state.shoppingbag.find(
 				(item) => item.id === action.payload.id
 			);
@@ -38,7 +39,7 @@ export const shoppingbagSlice = createSlice({
 });
 
 // Action creators are generated for each case reducer function
-export const { addToCart, incrementQuantity, decrementQuantity, removeItem } =
+export const { addToBag, incrementQuantity, decrementQuantity, removeItem } =
 	shoppingbagSlice.actions;
 
 export default shoppingbagSlice.reducer;

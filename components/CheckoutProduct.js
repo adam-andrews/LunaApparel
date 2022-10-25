@@ -4,7 +4,7 @@ import {
 	ClockIcon,
 	XMarkIcon as XMarkIconMini,
 } from '@heroicons/react/20/solid';
-export default function CheckoutProduct({ product }) {
+export default function CheckoutProduct({ product, productIdx }) {
 	return (
 		<li key={product.id} className="flex py-6 sm:py-10">
 			<div className="flex-shrink-0">

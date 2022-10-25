@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import React from 'react';
 import { v4 as uuidv4 } from 'uuid';
+
+// Product Component Thumbnail and price, Loaded on new Arrivals page
 function Product({ product }) {
 	return (
 		<Link
