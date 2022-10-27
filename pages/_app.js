@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
 	return (
 		<Provider store={store}>
 			<PersistGate persistor={persistor}>
-				<Component {...pageProps} />;
+				<Component {...pageProps} />
 			</PersistGate>
 		</Provider>
 	);
