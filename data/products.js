@@ -1,0 +1,148 @@
+export const MaleProducts = [
+	{
+		id: 1,
+		category: 'jackets',
+		name: 'MR P',
+		href: '#',
+		price: '£745',
+		description: 'Checked Wool-Blend Felt Coat',
+		imageSrc:
+			'https://cache.mrporter.com/variants/images/1647597284305285/in/w1200_q60.jpg',
+		imageAlt: 'Checked Wool-Blend Felt Coat',
+		season: 'winter',
+	},
+	{
+		id: 2,
+		name: 'GREG LAUREN',
+		category: 'jackets',
+		href: '#',
+		price: '£2,875',
+		description: 'Twill Bomber Jacket',
+		imageSrc:
+			'https://cache.mrporter.com/variants/images/1647597295403224/in/w1200_q60.jpg',
+		imageAlt: 'Twill Bomber Jacket.',
+		season: 'summer',
+	},
+	{
+		id: 3,
+		name: 'GUCCI',
+		category: 'jackets',
+		href: '#',
+		price: '£2,200',
+		description: 'Suede-Panelled Wool Bomber Jacket',
+		imageSrc:
+			'https://cache.mrporter.com/variants/images/1647597278814307/in/w1200_q60.jpg',
+		imageAlt: 'Suede-Panelled Wool Bomber Jacket',
+		season: 'autumn',
+	},
+	{
+		id: 4,
+		category: 'tshirts',
+		name: 'MASSIMO ALBA',
+		href: '#',
+		price: '£250',
+		description: 'Cotton-Gabardine Shirt',
+		imageSrc:
+			'https://cache.mrporter.com/variants/images/1647597293523537/in/w1200_q60.jpg',
+		imageAlt: 'Cotton-Gabardine Shirt',
+		season: 'winter',
+	},
+	{
+		id: 5,
+		name: 'AMIRI',
+		category: 'tshirts',
+		href: '#',
+		price: '£950',
+		description: 'Paint-Splattered Silk-Twill Shirt',
+		imageSrc:
+			'https://cache.mrporter.com/variants/images/45666037504743995/in/w1200_q60.jpg',
+		imageAlt: 'Paint-Splattered Silk-Twill Shirt',
+		season: 'summer',
+	},
+	{
+		id: 6,
+		name: 'AMIRI',
+		category: 'tshirts',
+		href: '#',
+		price: '£2,655',
+		description: 'Camp-Collar Laser-Cut Leather Shirt',
+		imageSrc:
+			'https://cache.mrporter.com/variants/images/43769801095955227/in/w1200_q60.jpg',
+		imageAlt: 'Camp-Collar Laser-Cut Leather Shirt',
+		season: 'autumn',
+	},
+	{
+		id: 7,
+		category: 'shoes',
+		name: 'MOON BOOT',
+		href: `product/$ }`,
+		price: '£790',
+		description: 'Moon Embroidered Suede Boots',
+		imageSrc:
+			'https://cache.mrporter.com/variants/images/45666037505104862/in/w1500_q60.jpg',
+		imageAlt: 'Moon Embroidered Suede Boots',
+		season: 'winter',
+	},
+	{
+		id: 8,
+		name: 'PALM ANGELS',
+		category: 'shoes',
+		href: '#',
+		price: '£400',
+		description: 'Leopard-Print Faux Fur Mules',
+		imageSrc:
+			'https://cache.mrporter.com/variants/images/43769801094640935/in/w1500_q60.jpg',
+		imageAlt: 'Leopard-Print Faux Fur Mules',
+		season: 'summer',
+	},
+	{
+		id: 9,
+		name: 'COMMON PROJECTS',
+		category: 'shoes',
+		href: '#',
+		price: '£520',
+		description: 'Suede Chelsea Boots',
+		imageSrc:
+			'https://cache.mrporter.com/variants/images/42247633208610447/in/w1500_q60.jpg',
+		imageAlt: 'Suede Chelsea Boots',
+		season: 'autumn',
+	},
+
+	{
+		id: 10,
+		category: 'carry',
+		name: 'GALLERY DEPT',
+		href: '#',
+		price: '£2,045',
+		description: 'Merci Distressed Upcycled Denim Messenger Bag',
+		imageSrc:
+			'https://cache.mrporter.com/variants/images/1647597295252236/in/w1500_q60.jpg',
+		imageAlt: 'Merci Distressed Upcycled Denim Messenger Bag',
+		season: 'winter',
+	},
+	{
+		id: 11,
+		name: 'VALENTINO',
+		category: 'carry',
+		href: '#',
+		price: '£3,200',
+		description: 'Large Quilted Leather Messenger Bag',
+		imageSrc:
+			'https://cache.mrporter.com/variants/images/1647597299034572/in/w1500_q60.jpg',
+		imageAlt: 'Large Quilted Leather Messenger Bag',
+		season: 'summer',
+	},
+	{
+		id: 12,
+		name: 'BRUNELLO CUCINELLI',
+		category: 'carry',
+		href: '#',
+		price: '£2,555',
+		description: 'Leather-Trimmed Suede Backpack',
+		imageSrc:
+			'https://cache.mrporter.com/variants/images/1647597294178475/in/w1500_q60.jpg',
+		imageAlt: 'Leather-Trimmed Suede Backpack',
+		season: 'autumn',
+	},
+	// More products...
+];
