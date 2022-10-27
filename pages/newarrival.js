@@ -8,7 +8,7 @@ function classNames(...classes) {
 
 export default function Newarrivals() {
 	return (
-		<div className="bg-gray-50">
+		<div>
 			<LogoCenter />
 			<main>
 				<div className="mx-auto max-w-3xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">

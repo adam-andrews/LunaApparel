@@ -18,15 +18,13 @@ export const navigation = {
 					name: 'Tshirt',
 					href: '/women/tshirts',
 					imageSrc: FemaleTshirtCover.src,
-					imageAlt:
-						'Close up of Basic Tee fall bundle with off-white, ochre, olive, and black tees.',
+					imageAlt: '',
 				},
 				{
 					name: 'Jackets',
 					href: '/women/jackets',
 					imageSrc: FemaleJacketCover.src,
-					imageAlt:
-						'Model opening tan leather long wallet with credit card pockets and cash pouch.',
+					imageAlt: '.',
 				},
 				{
 					name: 'Shoes',
@@ -39,8 +37,7 @@ export const navigation = {
 					name: 'Carry',
 					href: '/women/carry',
 					imageSrc: FemaleBagCover.src,
-					imageAlt:
-						'Model opening tan leather long wallet with credit card pockets and cash pouch.',
+					imageAlt: '',
 				},
 			],
 		},
@@ -51,28 +48,25 @@ export const navigation = {
 					name: 'Basic Tees',
 					href: '/men/tshirts',
 					imageSrc: MaleTshirtCover.src,
-					imageAlt: 'Model wearing light heather gray t-shirt.',
+					imageAlt: '',
 				},
 				{
 					name: 'Jackets',
 					href: '/men/jackets',
 					imageSrc: MaleJacketCover.src,
-					imageAlt:
-						'Model opening tan leather long wallet with credit card pockets and cash pouch.',
+					imageAlt: '',
 				},
 				{
 					name: 'Shoes',
 					href: '/men/shoes',
 					imageSrc: MaleShoesCover.src,
-					imageAlt:
-						'Grey 6-panel baseball hat with black brim, black mountain graphic on front, and light heather gray body.',
+					imageAlt: '',
 				},
 				{
 					name: 'Carry',
 					href: '/men/carry',
 					imageSrc: MaleBackpackCover.src,
-					imageAlt:
-						'Model putting folded cash into slim card holder olive leather wallet with hand stitching.',
+					imageAlt: '',
 				},
 			],
 		},

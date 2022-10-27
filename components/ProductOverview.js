@@ -4,6 +4,8 @@ import { RadioGroup } from '@headlessui/react';
 import { ShieldCheckIcon } from '@heroicons/react/24/outline';
 import { useDispatch } from 'react-redux';
 import { addToBag as addToBagRedux } from '@redux/shoppingbag';
+import toast, { Toaster } from 'react-hot-toast';
+
 function classNames(...classes) {
 	return classes.filter(Boolean).join(' ');
 }
@@ -11,6 +13,7 @@ function classNames(...classes) {
 // Compnent Slug used on product
 function ProductOverview({ product }) {
 	function addToBag(e) {
+		toast.success('Added to bag');
 		e.preventDefault();
 		dispatch(addToBagRedux(product));
 	}
@@ -19,6 +22,7 @@ function ProductOverview({ product }) {
 	return (
 		<div className="mx-auto max-w-2xl py-8 px-4 sm:py-12 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
 			{/* Product details */}
+			<Toaster />
 			<div className="lg:max-w-lg lg:self-end">
 				<div className="mt-4">
 					<h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
