@@ -6,9 +6,14 @@ import ShopByCategory from '@components/ShopByCategory';
 import Footer from '@components/Footer';
 import Image from 'next/image';
 import Link from 'next/link';
+import Head from 'next/head';
+
 function Home() {
 	return (
 		<div className="bg-white">
+			<Head>
+				<title>Sisyphus</title>
+			</Head>
 			{/* Hero section */}
 			<MobileMenu />
 			<div className="relative bg-white-900">

@@ -1,7 +1,7 @@
 import Logo from '@images/Logo.svg';
 export default function Footer() {
 	return (
-		<footer className="bg-gray-500 opacity-50 mt-10">
+		<footer className="bg-gray-800 opacity-70 mt-10">
 			<div className="mx-auto max-w-7xl overflow-hidden py-12 px-4 sm:px-6 lg:px-8">
 				<div className="mt-8 flex justify-center space-x-6">
 					<img className="h-8 w-auto" src={Logo.src} alt="" />
