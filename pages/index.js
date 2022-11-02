@@ -12,7 +12,12 @@ function Home() {
 	return (
 		<div className="bg-white">
 			<Head>
-				<title>Sisyphus</title>
+				<title>Luna apparel</title>
+				<meta
+					name="description"
+					content="Luna apparel is a high end clothing brand that is focused on quality and style."
+					key="desc"
+				/>
 			</Head>
 			{/* Hero section */}
 			<MobileMenu />

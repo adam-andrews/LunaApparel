@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://https://luna-apparel.vercel.app
+
+# Sitemaps
+Sitemap: https://https://luna-apparel.vercel.app/sitemap.xml
