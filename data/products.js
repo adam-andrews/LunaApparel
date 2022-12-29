@@ -7,7 +7,7 @@ export const MaleProducts = [
 		price: '£745',
 		description: 'Checked Wool-Blend Felt Coat',
 		imageSrc:
-			'https://cache.mrporter.com/variants/images/1647597284305285/in/w1200_q60.jpg',
+			'https://imagesforlunaapparel.s3.eu-west-2.amazonaws.com/-image1.avif',
 		imageAlt: 'Checked Wool-Blend Felt Coat',
 		season: 'winter',
 	},
@@ -19,7 +19,7 @@ export const MaleProducts = [
 		price: '£2,875',
 		description: 'Twill Bomber Jacket',
 		imageSrc:
-			'https://cache.mrporter.com/variants/images/1647597295403224/in/w1200_q60.jpg',
+			'https://imagesforlunaapparel.s3.eu-west-2.amazonaws.com/image2.avif',
 		imageAlt: 'Twill Bomber Jacket.',
 		season: 'summer',
 	},
@@ -31,7 +31,7 @@ export const MaleProducts = [
 		price: '£2,200',
 		description: 'Suede-Panelled Wool Bomber Jacket',
 		imageSrc:
-			'https://cache.mrporter.com/variants/images/1647597278814307/in/w1200_q60.jpg',
+			'https://imagesforlunaapparel.s3.eu-west-2.amazonaws.com/image3.avif',
 		imageAlt: 'Suede-Panelled Wool Bomber Jacket',
 		season: 'autumn',
 	},
@@ -43,7 +43,7 @@ export const MaleProducts = [
 		price: '£250',
 		description: 'Cotton-Gabardine Shirt',
 		imageSrc:
-			'https://cache.mrporter.com/variants/images/1647597293523537/in/w1200_q60.jpg',
+			'https://imagesforlunaapparel.s3.eu-west-2.amazonaws.com/image4.avif',
 		imageAlt: 'Cotton-Gabardine Shirt',
 		season: 'winter',
 	},
@@ -55,7 +55,7 @@ export const MaleProducts = [
 		price: '£950',
 		description: 'Paint-Splattered Silk-Twill Shirt',
 		imageSrc:
-			'https://cache.mrporter.com/variants/images/45666037504743995/in/w1200_q60.jpg',
+			'https://imagesforlunaapparel.s3.eu-west-2.amazonaws.com/image5.avif',
 		imageAlt: 'Paint-Splattered Silk-Twill Shirt',
 		season: 'summer',
 	},
@@ -67,7 +67,7 @@ export const MaleProducts = [
 		price: '£2,655',
 		description: 'Camp-Collar Laser-Cut Leather Shirt',
 		imageSrc:
-			'https://cache.mrporter.com/variants/images/43769801095955227/in/w1200_q60.jpg',
+			'https://imagesforlunaapparel.s3.eu-west-2.amazonaws.com/image6.avif',
 		imageAlt: 'Camp-Collar Laser-Cut Leather Shirt',
 		season: 'autumn',
 	},
@@ -79,7 +79,7 @@ export const MaleProducts = [
 		price: '£790',
 		description: 'Moon Embroidered Suede Boots',
 		imageSrc:
-			'https://cache.mrporter.com/variants/images/45666037505104862/in/w1500_q60.jpg',
+			'https://imagesforlunaapparel.s3.eu-west-2.amazonaws.com/image7.avif',
 		imageAlt: 'Moon Embroidered Suede Boots',
 		season: 'winter',
 	},
@@ -91,7 +91,7 @@ export const MaleProducts = [
 		price: '£400',
 		description: 'Leopard-Print Faux Fur Mules',
 		imageSrc:
-			'https://cache.mrporter.com/variants/images/43769801094640935/in/w1500_q60.jpg',
+			'https://imagesforlunaapparel.s3.eu-west-2.amazonaws.com/image8.avif',
 		imageAlt: 'Leopard-Print Faux Fur Mules',
 		season: 'summer',
 	},
@@ -103,7 +103,7 @@ export const MaleProducts = [
 		price: '£520',
 		description: 'Suede Chelsea Boots',
 		imageSrc:
-			'https://cache.mrporter.com/variants/images/42247633208610447/in/w1500_q60.jpg',
+			'https://imagesforlunaapparel.s3.eu-west-2.amazonaws.com/image9.avif',
 		imageAlt: 'Suede Chelsea Boots',
 		season: 'autumn',
 	},
@@ -116,7 +116,7 @@ export const MaleProducts = [
 		price: '£2,045',
 		description: 'Merci Distressed Upcycled Denim Messenger Bag',
 		imageSrc:
-			'https://cache.mrporter.com/variants/images/1647597295252236/in/w1500_q60.jpg',
+			'https://imagesforlunaapparel.s3.eu-west-2.amazonaws.com/image10.avif',
 		imageAlt: 'Merci Distressed Upcycled Denim Messenger Bag',
 		season: 'winter',
 	},
@@ -128,7 +128,7 @@ export const MaleProducts = [
 		price: '£3,200',
 		description: 'Large Quilted Leather Messenger Bag',
 		imageSrc:
-			'https://cache.mrporter.com/variants/images/1647597299034572/in/w1500_q60.jpg',
+			'https://imagesforlunaapparel.s3.eu-west-2.amazonaws.com/image11.avif',
 		imageAlt: 'Large Quilted Leather Messenger Bag',
 		season: 'summer',
 	},
@@ -140,7 +140,7 @@ export const MaleProducts = [
 		price: '£2,555',
 		description: 'Leather-Trimmed Suede Backpack',
 		imageSrc:
-			'https://cache.mrporter.com/variants/images/1647597294178475/in/w1500_q60.jpg',
+			'https://imagesforlunaapparel.s3.eu-west-2.amazonaws.com/image12.avif',
 		imageAlt: 'Leather-Trimmed Suede Backpack',
 		season: 'autumn',
 	},

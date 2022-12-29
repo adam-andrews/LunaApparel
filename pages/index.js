@@ -56,3 +56,19 @@ function Home() {
 }
 
 export default Home;
+
+// export async function getServerSideProps(context) {
+// 	const { db } = await connectToDatabase();
+
+// 	const collection = await db
+// 		.collection('products')
+// 		.find({})
+// 		.limit(20)
+// 		.toArray();
+
+// 	const properties = JSON.parse(JSON.stringify(collection));
+
+// 	return {
+// 		props: { properties },
+// 	};
+// }

@@ -7,7 +7,10 @@ const nextConfig = {
 		defaultLocale: 'en',
 	},
 	images: {
-		domains: ['cache.mrporter.com'],
+		domains: [
+			'cache.mrporter.com',
+			'imagesforlunaapparel.s3.eu-west-2.amazonaws.com',
+		],
 	},
 };
 
