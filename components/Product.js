@@ -12,7 +12,6 @@ function Product({ product }) {
 			className="group"
 			replace
 		>
-			<a>
 				<div className="relative aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg sm:aspect-w-2 sm:aspect-h-3 hover:opacity-75">
 					<Image
 						src={product.imageSrc}
@@ -28,7 +27,6 @@ function Product({ product }) {
 				<p className="mt-1 text-sm italic text-gray-500">
 					{product.description}
 				</p>
-			</a>
 		</Link>
 	);
 }

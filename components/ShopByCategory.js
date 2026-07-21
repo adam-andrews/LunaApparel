@@ -21,8 +21,7 @@ function ShopByCategory() {
 
 			<div className="mt-10 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-8 lg:space-y-0">
 				{collections.map((collection) => (
-					<Link key={collection.name} href={collection.href}>
-						<a className="group block">
+					<Link className="group block" key={collection.name} href={collection.href}>
 							<div
 								aria-hidden="true"
 								className="aspect-w-3 aspect-h-2 overflow-hidden rounded-lg group-hover:opacity-75 lg:aspect-w-5 lg:aspect-h-6"
@@ -39,7 +38,6 @@ function ShopByCategory() {
 							<p className="mt-2 text-sm text-gray-500">
 								{collection.description}
 							</p>
-						</a>
 					</Link>
 				))}
 			</div>

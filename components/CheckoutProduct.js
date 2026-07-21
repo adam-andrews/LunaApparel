@@ -6,6 +6,7 @@ import {
 } from '@heroicons/react/20/solid';
 import { useDispatch } from 'react-redux';
 import { removeItem } from '@redux/shoppingbag';
+import Link from 'next/link';
 export default function CheckoutProduct({ product, productIdx }) {
 	const dispatch = useDispatch();
 	console.log(product);
@@ -29,12 +30,12 @@ export default function CheckoutProduct({ product, productIdx }) {
 					<div>
 						<div className="flex justify-between">
 							<h3 className="text-sm">
-								<a
+								<Link
 									href={product.href}
 									className="font-medium text-gray-700 hover:text-gray-800"
 								>
 									{product.name}
-								</a>
+								</Link>
 							</h3>
 						</div>
 						<div className="mt-1 flex text-sm">

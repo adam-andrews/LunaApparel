@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '@components/Navbar';
 import Hero from '@images/Hero.jpeg';
-import MobileMenu from '@components/MobileMenu';
+import MobileMenu from '@components/mobileMenu';
 import ShopByCategory from '@components/ShopByCategory';
 import Footer from '@components/Footer';
 import Image from 'next/image';
@@ -42,10 +42,8 @@ function Home() {
 						options from our summer small-batch release while they're still in
 						stock.
 					</p>
-					<Link href="/newarrivals">
-						<a className="mt-8 inline-block rounded-md border border-transparent bg-white py-3 px-8 text-base font-medium text-gray-900 hover:bg-gray-100">
+					<Link className="mt-8 inline-block rounded-md border border-transparent bg-white py-3 px-8 text-base font-medium text-gray-900 hover:bg-gray-100" href="/newarrivals">
 							Shop New Arrivals
-						</a>
 					</Link>
 				</div>
 			</div>

@@ -5,6 +5,7 @@ import { XMarkIcon } from '@heroicons/react/24/outline';
 import { navigation } from '@data/navigation';
 import { useSelector, useDispatch } from 'react-redux';
 import { closeMobileMenu } from '@redux/mobilemenu';
+import Link from 'next/link';
 
 function classNames(...classes) {
 	return classes.filter(Boolean).join(' ');
@@ -91,7 +92,7 @@ function MobileMenu() {
 																className="object-cover object-center"
 															/>
 														</div>
-														<a
+														<Link
 															href={item.href}
 															className="mt-6 block text-sm font-medium text-gray-900"
 														>
@@ -100,7 +101,7 @@ function MobileMenu() {
 																aria-hidden="true"
 															/>
 															{item.name}
-														</a>
+														</Link>
 														<p
 															aria-hidden="true"
 															className="mt-1 text-sm text-gray-500"
@@ -117,12 +118,12 @@ function MobileMenu() {
 							<div className="space-y-6 border-t border-gray-200 py-6 px-4">
 								{navigation.pages.map((page) => (
 									<div key={page.name} className="flow-root">
-										<a
+										<Link
 											href={page.href}
 											className="-m-2 block p-2 font-medium text-gray-900"
 										>
 											{page.name}
-										</a>
+										</Link>
 									</div>
 								))}
 							</div>{' '}

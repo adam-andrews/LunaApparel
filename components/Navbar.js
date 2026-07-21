@@ -26,10 +26,8 @@ function Navbar() {
 								{/* Logo (lg+) */}
 								<div className="hidden lg:flex lg:flex-1 lg:items-center">
 									<Link href="/">
-										<a>
 											<span className="sr-only">Luma apparel</span>
 											<Image height={32} width={32} src={Logo.src} alt="" />
-										</a>
 									</Link>
 								</div>
 
@@ -84,14 +82,12 @@ function Navbar() {
 																								className="object-cover object-center"
 																							/>
 																						</div>
-																						<Link href={item.href}>
-																							<a className="mt-4 block font-medium text-gray-900">
+																						<Link className="mt-4 block font-medium text-gray-900" href={item.href}>
 																								<span
 																									className="absolute inset-0 z-10"
 																									aria-hidden="true"
 																								/>
 																								{item.name}
-																							</a>
 																						</Link>
 																						<p
 																							aria-hidden="true"
@@ -112,10 +108,8 @@ function Navbar() {
 											))}
 
 											{navigation.pages.map((page) => (
-												<Link key={page.name} href={page.href}>
-													<a className="flex items-center text-sm font-medium text-white">
+												<Link className="flex items-center text-sm font-medium text-white" key={page.name} href={page.href}>
 														{page.name}
-													</a>
 												</Link>
 											))}
 										</div>
@@ -135,19 +129,16 @@ function Navbar() {
 								</div>
 
 								{/* Logo (lg-) */}
-								<Link href="/">
-									<a href="#" className="lg:hidden">
+								<Link className="lg:hidden" href="/">
 										<span className="sr-only">Luma clothing</span>
 										<img src={Logo.src} alt="" className="h-8 w-auto" />
-									</a>
 								</Link>
 
 								<div className="flex flex-1 items-center justify-end">
 									<div className="flex items-center lg:ml-8">
 										{/* Cart */}
 										<div className="ml-4 flow-root lg:ml-8">
-											<Link href="/checkout">
-												<a className="group -m-2 flex items-center p-2 ">
+											<Link className="group -m-2 flex items-center p-2 " href="/checkout">
 													<ShoppingBagIcon
 														className="h-6 w-6 flex-shrink-0 text-white"
 														aria-hidden="true"
@@ -158,7 +149,6 @@ function Navbar() {
 													<span className="sr-only">
 														items in cart, view bag
 													</span>
-												</a>
 											</Link>
 										</div>
 									</div>
